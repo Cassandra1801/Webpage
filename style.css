@@ -1,0 +1,60 @@
+body {
+
+}
+
+h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+
+
+    display: flex;
+    /* Gør body til en flex-container */
+
+    justify-content: center;
+    /* Vandret centrering */
+
+
+}
+
+#tekst {
+    display: flex;
+    /* Gør body til en flex-container */
+
+
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+
+#about\ me {
+    display: flex;
+    /* Gør body til en flex-container */
+
+
+    justify-content: center;
+    /* Vandret centrering */
+
+    align-items: flex-start;
+    /* Lodret centrering */
+}
+
+#portræt {
+    background-color: aqua;
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+
+
