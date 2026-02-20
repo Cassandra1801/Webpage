@@ -1,59 +1,26 @@
 body {
-
+    background-color: mediumpurple;
 }
 
 h1 {
-    font-size: 100px;
-    text-transform: uppercase;
-
-
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-
+    text-align: center;
+    margin-top: 100px;
 }
 
-#tekst {
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+h3 {
+    text-align: center;
+    font-weight: normal;
 }
 
-#about\ me {
-    display: flex;
-    /* Gør body til en flex-container */
-
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+a img {
+    border: none;
+    background: transparent;
+    display: block;
 }
-
-#portræt {
-    background-color: aqua;
+a img:hover {
+    opacity: 0.8;
 }
-
-img {
-    width: 300px;
-    height: auto;
+a {
+    text-decoration: none;
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-
-
-
 
