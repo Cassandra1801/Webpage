@@ -10,17 +10,36 @@ h1 {
 h3 {
     text-align: center;
     font-weight: normal;
+    margin-bottom: 24px; /* space below h3 */
 }
 
-a img {
-    border: none;
-    background: transparent;
-    display: block;
+.links {
+    display: flex;
+    justify-content: center; /* centers logos horizontally */
+    align-items: center;
+    gap: 16px;               /* space between logos */
 }
-a img:hover {
-    opacity: 0.8;
+
+.skills-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
-a {
-    text-decoration: none;
+
+.skills-section h2,
+.skills-section p {
+    text-align: center;
+}
+
+.skills-groups {
+    display: grid;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.skills-group {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
 }
 
