@@ -1,45 +1,76 @@
 body {
+    margin: 0;
     background-color: mediumpurple;
+    color: #1f1230;
+    font-family: Arial, sans-serif;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 100px;
+.site-header{
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid rgba(31, 18, 48, 0.2);
 }
 
-h3 {
-    text-align: center;
-    font-weight: normal;
-    margin-bottom: 24px; /* space below h3 */
+
+.main-nav{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
 }
+
+.main-nav a{
+    color: #1f1230;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.page-section{
+    padding: 56px 0;
+    border-bottom: 1px solid rgba(31, 18, 48, 0.2);
+}
+
+.page-section:last-child{
+    border-bottom: none;
+}
+
+.hero h1, .page-section h2, .page-section h3, .page-section p{
+    text-align: center;
+}
+
+.hero h1{
+    margin-top: 20px;
+}
+
+
+.page-section ul{
+    width: fit-content;
+    margin: 12px auto 24px;
+}
+
 
 .links {
     display: flex;
     justify-content: center; /* centers logos horizontally */
     align-items: center;
     gap: 16px;               /* space between logos */
+    margin-top: 12px;
 }
 
-.skills-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 20px;
-}
 
-.skills-section h2,
-.skills-section p {
-    text-align: center;
-}
-
-.skills-groups {
-    display: grid;
-    gap: 24px;
-    margin-top: 24px;
-}
-
-.skills-group {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 12px;
-}
 
