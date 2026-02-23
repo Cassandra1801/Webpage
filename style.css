@@ -1,59 +1,45 @@
 body {
-
+    background-color: mediumpurple;
 }
 
 h1 {
-    font-size: 100px;
-    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+}
 
+h3 {
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 24px; /* space below h3 */
+}
 
+.links {
     display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-
+    justify-content: center; /* centers logos horizontally */
+    align-items: center;
+    gap: 16px;               /* space between logos */
 }
 
-#tekst {
-    display: flex;
-    /* Gør body til en flex-container */
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+.skills-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
 }
 
-#about\ me {
-    display: flex;
-    /* Gør body til en flex-container */
-
-
-    justify-content: center;
-    /* Vandret centrering */
-
-    align-items: flex-start;
-    /* Lodret centrering */
+.skills-section h2,
+.skills-section p {
+    text-align: center;
 }
 
-#portræt {
-    background-color: aqua;
+.skills-groups {
+    display: grid;
+    gap: 24px;
+    margin-top: 24px;
 }
 
-img {
-    width: 300px;
-    height: auto;
+.skills-group {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
 }
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-}
-
-
-
 
