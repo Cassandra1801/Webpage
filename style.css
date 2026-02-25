@@ -13,7 +13,6 @@ body {
     border-bottom: 1px solid rgba(31, 18, 48, 0.2);
 }
 
-
 .main-nav{
     max-width: 900px;
     margin: 0 auto;
@@ -33,12 +32,15 @@ body {
     text-decoration: underline;
 }
 
+.main-nav a[aria-current="page"] {
+    text-decoration: underline;
+}
+
 main{
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
-
 
 .page-section{
     padding: 56px 0;
@@ -72,21 +74,82 @@ main{
 }
 
 /* Link styling */
-a {
-    color: inherit;
+.links a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.links a:hover {
+    transform: translateY(-1px);
+}
+
+.site-footer {
+    margin-top: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(31, 18, 48, 0.2);
+}
+
+.footer-content{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-column h4{
+    margin: 0 0 8px;
+}
+
+.footer-column a{
+    color: #1f1230;
     text-decoration: none;
 }
 
-a:visited {
-    color: inherit;
+.footer-column a:hover{
+    text-decoration: underline;
 }
 
-a:hover {
-    text-decoration: none;
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-a:active {
-    color: inherit;
+.footer-links a{
+    display: inline-flex;
+}
+
+.projects-section{
+    display: grid;
+    gap: 18px;
+}
+
+.project-card{
+    max-width: 680px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(31, 18, 48, 0.2);
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+}
+
+.project-card h3{
+    margin-top: 0;
+}
+
+.project-card a{
+    font-weight: 600;
+    color: #1f1230;
 }
 
 
