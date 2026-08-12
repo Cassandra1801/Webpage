@@ -1,10 +1,17 @@
+/* ================================
+   GENERELT — gælder hele siden
+   ================================ */
 body {
     margin: 0;
-    background-color: mediumpurple;
+    background-color: #E5D9F2;
     color: #1f1230;
     font-family: Arial, sans-serif;
 }
 
+
+/* ================================
+   HEADER & NAVIGATION
+   ================================ */
 .site-header{
     position: sticky;
     top: 0;
@@ -14,7 +21,7 @@ body {
 }
 
 .main-nav{
-    max-width: 900px;
+    max-width: 900;
     margin: 0 auto;
     padding: 14px 20px;
     display: flex;
@@ -22,67 +29,102 @@ body {
     gap: 24px;
 }
 
+/* Links i navigationen */
 .main-nav a{
     color: #1f1230;
     text-decoration: none;
     font-weight: 600;
 }
 
+/* Understregning når man holder musen over et link */
 .main-nav a:hover{
     text-decoration: underline;
 }
 
+/* Understregning på den side man er på lige nu */
 .main-nav a[aria-current="page"] {
     text-decoration: underline;
 }
 
+
+/* ================================
+   MAIN — det midterste indhold
+   ================================ */
 main{
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
 
+
+/* ================================
+   SEKTIONER — Home, About, Projects, Contact
+   ================================ */
+
+/* Fælles styling for alle sektioner */
 .page-section{
     padding: 56px 0;
     border-bottom: 1px solid rgba(31, 18, 48, 0.2);
 }
 
+/* Ingen streg under den sidste sektion */
 .page-section:last-child{
     border-bottom: none;
 }
 
+/* Centrerer overskrifter og tekst i alle sektioner */
 .hero h1, .page-section h2, .page-section h3, .page-section p{
     text-align: center;
 }
 
+/* Afstand over h1 i hero-sektionen ("Hi! I'm Cassandra") */
 .hero h1{
     margin-top: 20px;
 }
 
+/* Lige meget afstand under alle overskrifter */
+.page-section h1,
+.page-section h2 {
+    margin-bottom: 12px;
+}
 
+/* Nulstiller afstanden over paragraferne så kun overskriftens margin styrer mellemrummet */
+.page-section > p {
+    margin-top: 0;
+}
+
+/* Lister inde i sektioner */
 .page-section ul{
     width: fit-content;
     margin: 12px auto 24px;
 }
 
+
+/* ================================
+   KONTAKT-IKONER (LinkedIn, GitHub, Gmail)
+   ================================ */
 .links {
     display: flex;
-    justify-content: center; /* centers logos horizontally */
+    justify-content: center;
     align-items: center;
-    gap: 16px;               /* space between logos */
+    gap: 16px;
     margin-top: 12px;
 }
 
-/* Link styling */
 .links a {
     display: inline-flex;
     align-items: center;
 }
 
+/* Lille løft-effekt når man holder musen over et ikon */
 .links a:hover {
     transform: translateY(-1px);
 }
 
+
+/* ================================
+   FOOTER
+   ================================ */
 .site-footer {
     margin-top: 40px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -128,6 +170,10 @@ main{
     display: inline-flex;
 }
 
+
+/* ================================
+   PROJEKTKORT (Projects-sektionen)
+   ================================ */
 .projects-section{
     display: grid;
     gap: 18px;
@@ -136,11 +182,12 @@ main{
 .project-card{
     max-width: 680px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.35);
-    border: 1px solid rgba(31, 18, 48, 0.2);
-    border-radius: 10px;
-    padding: 16px;
     text-align: center;
+}
+
+/* Ekstra afstand mellem to projektkort efter hinanden */
+.project-card + .project-card{
+    margin-top: 50px;
 }
 
 .project-card h3{
@@ -152,5 +199,6 @@ main{
     color: #1f1230;
 }
 
-
-
+.project-card p {
+    font-style: italic;
+}

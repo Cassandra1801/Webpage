@@ -1,3 +1,6 @@
+/* ================================
+   GENERELT — gælder hele siden
+   ================================ */
 body {
     margin: 0;
     background-color: mediumpurple;
@@ -5,12 +8,26 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* ================================
+   PICTURE
+   ================================ */
+.page-section img {
+    display: block;
+    margin: 40px auto 10px;
+    border-radius: 50%;
+}
+
+
+/* ================================
+   FOOTER
+   ================================ */
 .site-footer {
     background: rgba(255, 255, 255, 0.85);
     color: #111;
     padding: 1rem;
 }
 
+/* Fordeler footer-kolonnerne jævnt på tværs */
 .footer-content {
     display: flex;
     justify-content: space-evenly;
@@ -22,6 +39,7 @@ body {
     padding: 2rem;
 }
 
+/* Links i footeren */
 .footer-column a {
     display: block;
     margin-bottom: 0.5rem;
@@ -30,6 +48,7 @@ body {
     transition: color 0.2s ease;
 }
 
+/* Farveændring når man holder musen over et footer-link */
 .footer-column a:hover {
     color: mediumpurple;
 }
